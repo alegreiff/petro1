@@ -2481,6 +2481,124 @@ main {
 }
 
 /**/
+/* --- Footer Widgets --- */
+.footer-widgets .wrap {
+  background: #ededed;
+  color: #ededed;
+  display: grid;
+  grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco";
+  padding: 0.2em;
+}
+
+@media (min-width: 800px) {
+  .footer-widgets .wrap {
+    grid-template-areas: "uno dos" "tres cuatro" "cinco cinco";
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer-widgets .wrap {
+    grid-template-areas: "uno dos tres cuatro" "cinco cinco cinco cinco";
+  }
+}
+
+.footer-widgets-1, .footer-widgets-2, .footer-widgets-3, .footer-widgets-4, .footer-widgets-5 {
+  margin: 0.2em;
+  padding: 0.5em;
+}
+
+.footer-widgets-1 {
+  background-color: #56a4ce;
+  grid-area: uno;
+}
+
+.footer-widgets-2 {
+  background-color: #56a4ce;
+  grid-area: dos;
+}
+
+.footer-widgets-3 {
+  background-color: #56a4ce;
+  grid-area: tres;
+}
+
+.footer-widgets-4 {
+  background-color: #56a4ce;
+  grid-area: cuatro;
+}
+
+.footer-widgets-5 {
+  background-color: #56a4ce;
+  grid-area: cinco;
+  max-height: 70px !important;
+}
+
+.footer-widgets .wrap::before {
+  display: none;
+}
+
+/*
+.footer-widgets {
+  background: $naranja;
+  color: $blanco;
+  clear: both;
+  font-size: 14px;
+  font-size: 1.4rem;
+  padding: 40px 0 16px;
+  padding: 4rem 0 1.6rem;
+}
+.footer-widgets-1,
+.footer-widgets-3 {
+  width: auto;
+  background-color: hotpink;
+}
+
+.footer-widgets-2 {
+  width: 360px;
+  background-color: yellow;
+}
+
+.footer-widgets-1 {
+  margin-right: 40px;
+}
+
+.footer-widgets-1,
+.footer-widgets-2 {
+  float: left;
+}
+
+.footer-widgets-3 {
+  float: right;
+}
+
+.footer-widgets a {
+  border-bottom: 1px solid #666;
+  color: #999;
+}
+
+.footer-widgets a:hover {
+  color: #ccc;
+}
+
+.footer-widgets .widget {
+  margin-bottom: 24px;
+  margin-bottom: 2.4rem;
+}
+
+.footer-widgets .widgettitle {
+  color: #fff;
+}
+
+.footer-widgets li {
+  list-style-type: none;
+  margin-bottom: 6px;
+  margin-bottom: 0.6rem;
+  word-wrap: break-word;
+}
+
+.footer-widgets .search-form {
+  width: 100%;
+}*/
 body {
   font-family: "Roboto", sans-serif;
 }

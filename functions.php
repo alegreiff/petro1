@@ -326,3 +326,14 @@ function remove_titles_all_single_pages() {
         remove_action( 'genesis_entry_header', 'genesis_do_post_format_image', 4 );
     }
 }
+
+//* Customize the entire footer
+/*remove_action( 'genesis_footer', 'genesis_do_footer' );
+add_action( 'genesis_footer', 'sp_custom_footer' );
+function sp_custom_footer() {
+    ?>
+    <p>&copy; Copyright 2017 <a href="http://mydomain.com/">My Domain</a> &middot; All Rights Reserved &middot; Powered by <a href="http://wordpress.org/">WordPress</a> &middot; <a href="http://mydomain.com/wp-admin">Admin</a></p>
+    <?php
+}*/
+//* Add support for 3-column footer widgets
+add_theme_support( 'genesis-footer-widgets', 5 );
