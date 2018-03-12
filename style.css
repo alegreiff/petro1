@@ -2403,7 +2403,8 @@ p.form-submit,
 }
 
 .site-header.dark {
-  background-color: #abd2e7;
+  /*background-color: aclarar($azulsuave, 50);*/
+  background-color: red;
 }
 
 .site-header.dark .genesis-nav-menu a {
