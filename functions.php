@@ -336,4 +336,4 @@ function sp_custom_footer() {
     <?php
 }*/
 //* Add support for 3-column footer widgets
-add_theme_support( 'genesis-footer-widgets', 5 );
+add_theme_support( 'genesis-footer-widgets', 6 );

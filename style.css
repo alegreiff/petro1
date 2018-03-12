@@ -2486,19 +2486,19 @@ main {
   background: #ededed;
   color: #ededed;
   display: grid;
-  grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco";
+  grid-template-areas: "uno uno" "dos dos" "tres tres" "cuatro cuatro" "cinco seis";
   padding: 0.2em;
 }
 
 @media (min-width: 800px) {
   .footer-widgets .wrap {
-    grid-template-areas: "uno dos" "tres cuatro" "cinco cinco";
+    grid-template-areas: "uno dos" "tres cuatro" "cinco seis";
   }
 }
 
 @media (min-width: 1200px) {
   .footer-widgets .wrap {
-    grid-template-areas: "uno dos tres cuatro" "cinco cinco cinco cinco";
+    grid-template-areas: "uno dos tres cuatro" "cinco cinco seis seis";
   }
 }
 
@@ -2530,6 +2530,12 @@ main {
 .footer-widgets-5 {
   background-color: #56a4ce;
   grid-area: cinco;
+  max-height: 70px !important;
+}
+
+.footer-widgets-6 {
+  background-color: #ff64d5;
+  grid-area: seis;
   max-height: 70px !important;
 }
 
