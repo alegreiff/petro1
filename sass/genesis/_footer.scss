@@ -1,0 +1,142 @@
+/**/
+/* --- Footer Widgets --- */
+
+#genesis-footer-widgets{
+  background-color: $blanco;
+}
+
+.footer-widgets .wrap {
+  background: $blanco;
+  color: $blanco;
+  display: grid;
+  grid-template-areas: "uno uno" "dos dos" "tres tres" "cuatro cuatro" "cinco seis";
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0.2em;
+  @media (min-width: 800px) { //de 800 a 1200
+    grid-template-areas: "uno dos" "tres cuatro" "cinco seis";
+  }
+  @media (min-width: 1200px) { //1200 y más
+    grid-template-areas: "uno dos tres cuatro" "cinco cinco seis seis";
+  }
+}
+
+.footer-widgets-1, .footer-widgets-2, .footer-widgets-3, .footer-widgets-4 {
+  min-height: 240px;
+  justify-content: center;
+  align-items: start;
+  border-radius: 0.6em;
+}
+
+.footer-widgets-1, .footer-widgets-2, .footer-widgets-3, .footer-widgets-4, .footer-widgets-5, .footer-widgets-6 {
+  display: flex;
+  margin: 0.1em;
+  padding: 1em 0.5em 0 0.5em;
+
+}
+
+.footer-widgets-1 {
+  background-color: aclarar($azulsuave, 0);
+  grid-area: uno;
+}
+
+.footer-widgets-2 {
+  background-color: aclarar($azulsuave, 0);
+  grid-area: dos;
+}
+
+.footer-widgets-3 {
+  background-color: aclarar($azulsuave, 0);
+  grid-area: tres;
+}
+
+.footer-widgets-4 {
+  background-color: aclarar($azulsuave, 0);
+  grid-area: cuatro;
+}
+
+.footer-widgets-5 {
+  justify-self: start;
+  background-color: $blanco;
+  grid-area: cinco;
+  max-height: 90px !important;
+}
+
+.footer-widgets-6 {
+  justify-self: end;
+  background-color: $blanco;
+  grid-area: seis;
+  max-height: 90px !important;
+  img {
+    max-width: 160px !important;
+    height: auto !important;
+
+  }
+}
+
+.footer-widgets .wrap::before {
+  display: none;
+
+}
+
+/*
+.footer-widgets {
+  background: $naranja;
+  color: $blanco;
+  clear: both;
+  font-size: 14px;
+  font-size: 1.4rem;
+  padding: 40px 0 16px;
+  padding: 4rem 0 1.6rem;
+}
+.footer-widgets-1,
+.footer-widgets-3 {
+  width: auto;
+  background-color: hotpink;
+}
+
+.footer-widgets-2 {
+  width: 360px;
+  background-color: yellow;
+}
+
+.footer-widgets-1 {
+  margin-right: 40px;
+}
+
+.footer-widgets-1,
+.footer-widgets-2 {
+  float: left;
+}
+
+.footer-widgets-3 {
+  float: right;
+}
+
+.footer-widgets a {
+  border-bottom: 1px solid #666;
+  color: #999;
+}
+
+.footer-widgets a:hover {
+  color: #ccc;
+}
+
+.footer-widgets .widget {
+  margin-bottom: 24px;
+  margin-bottom: 2.4rem;
+}
+
+.footer-widgets .widgettitle {
+  color: #fff;
+}
+
+.footer-widgets li {
+  list-style-type: none;
+  margin-bottom: 6px;
+  margin-bottom: 0.6rem;
+  word-wrap: break-word;
+}
+
+.footer-widgets .search-form {
+  width: 100%;
+}*/

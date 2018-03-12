@@ -1,0 +1,110 @@
+.site-inner,
+.wrap {
+
+  @media (min-width: 800px) { //de 800 a 1200
+  }
+  @media (min-width: 1200px) { //1200 y más
+    float: none;
+    margin: 0 auto;
+    max-width: 98%;
+  }
+}
+
+/* Site Header
+---------------------------------------------------------------------------------------------------- */
+
+.site-header {
+  background-color: $blanco;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+.featured-section .site-header {
+  background-color: transparent;
+}
+
+.featured-section .site-header > .wrap {
+  border-bottom: 1px solid #fff;
+}
+
+.site-header.dark {
+  background-color: aclarar($azulsuave, 50);
+  .genesis-nav-menu a {
+    color: $azulfuerte;
+  }
+}
+
+.site-header.dark > .wrap {
+  border-bottom: none;
+}
+
+.site-header.dark .nav-secondary {
+  display: none;
+}
+
+/*Marzo 07*/
+header.entry-header {
+  padding-top: 90px;
+}
+
+.genesis-nav-menu a {
+  color: $azulmedio;
+  display: block;
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 30px 15px;
+  text-transform: uppercase;
+}
+
+.genesis-nav-menu li.highlight a:focus::before,
+.genesis-nav-menu li.highlight a:hover::before {
+  color: #fff;
+}
+
+.front-page .genesis-nav-menu li.current-menu-item > a,
+.genesis-nav-menu > li > a {
+  border-bottom: 6px solid transparent;
+}
+
+.front-page .genesis-nav-menu li.current-menu-item > a:focus,
+.front-page .genesis-nav-menu li.current-menu-item > a:hover,
+.genesis-nav-menu li.current-menu-item > a,
+.genesis-nav-menu > li > a:focus,
+.genesis-nav-menu > li > a:hover {
+  border-color: $naranja;
+}
+
+.header-image .site-title > a {
+  margin-top: 5px;
+}
+
+main{
+  margin-top: 100px;
+}
+
+.menu-toggle,
+.sub-menu-toggle {
+  background: $azulsuave;
+  color: $azulfuerte;
+}
+
+
+
+.genesis-nav-menu .sub-menu a {
+  background-color: aclarar($azulsuave, 50) !important;
+  outline: none;
+  padding: 20px;
+  position: relative;
+  width: 200px;
+}
+
+.genesis-nav-menu .sub-menu a:focus,
+.genesis-nav-menu .sub-menu a:hover,
+.genesis-nav-menu .sub-menu li.current-menu-item > a {
+  background-color: aclarar($azulsuave, 50) !important;
+}
+
