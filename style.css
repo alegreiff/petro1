@@ -2403,7 +2403,7 @@ p.form-submit,
 }
 
 .site-header.dark {
-  background-color: #80ff80;
+  background-color: #d2ced9;
 }
 
 .site-header.dark .genesis-nav-menu a {
@@ -2491,27 +2491,30 @@ main {
   color: #ededed;
   display: grid;
   grid-template-areas: "uno uno" "dos dos" "tres tres" "cuatro cuatro" "cinco seis";
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   padding: 0.2em;
 }
 
 @media (min-width: 800px) {
   .footer-widgets .wrap {
     grid-template-areas: "uno dos" "tres cuatro" "cinco seis";
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 1200px) {
   .footer-widgets .wrap {
     grid-template-areas: "uno dos tres cuatro" "cinco cinco seis seis";
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
 .footer-widgets-1, .footer-widgets-2, .footer-widgets-3, .footer-widgets-4 {
-  min-height: 240px;
+  max-height: 150px;
   justify-content: center;
   align-items: start;
   border-radius: 0.6em;
+  font-size: 0.9em;
 }
 
 .footer-widgets-1, .footer-widgets-2, .footer-widgets-3, .footer-widgets-4, .footer-widgets-5, .footer-widgets-6 {
@@ -2521,22 +2524,22 @@ main {
 }
 
 .footer-widgets-1 {
-  background-color: #56a4ce;
+  background-color: #224252;
   grid-area: uno;
 }
 
 .footer-widgets-2 {
-  background-color: #56a4ce;
+  background-color: #2b5267;
   grid-area: dos;
 }
 
 .footer-widgets-3 {
-  background-color: #56a4ce;
+  background-color: #34627c;
   grid-area: tres;
 }
 
 .footer-widgets-4 {
-  background-color: #56a4ce;
+  background-color: #3c7390;
   grid-area: cuatro;
 }
 

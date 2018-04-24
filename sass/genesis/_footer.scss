@@ -10,21 +10,25 @@
   color: $blanco;
   display: grid;
   grid-template-areas: "uno uno" "dos dos" "tres tres" "cuatro cuatro" "cinco seis";
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   padding: 0.2em;
   @media (min-width: 800px) { //de 800 a 1200
     grid-template-areas: "uno dos" "tres cuatro" "cinco seis";
+    grid-template-columns: repeat(2, 1fr);
   }
   @media (min-width: 1200px) { //1200 y más
     grid-template-areas: "uno dos tres cuatro" "cinco cinco seis seis";
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
 .footer-widgets-1, .footer-widgets-2, .footer-widgets-3, .footer-widgets-4 {
-  min-height: 240px;
+  max-height: 150px;
   justify-content: center;
   align-items: start;
   border-radius: 0.6em;
+  font-size: 0.9em;
+
 }
 
 .footer-widgets-1, .footer-widgets-2, .footer-widgets-3, .footer-widgets-4, .footer-widgets-5, .footer-widgets-6 {
@@ -35,22 +39,22 @@
 }
 
 .footer-widgets-1 {
-  background-color: aclarar($azulsuave, 0);
+  background-color: oscurecer($azulsuave, 60);
   grid-area: uno;
 }
 
 .footer-widgets-2 {
-  background-color: aclarar($azulsuave, 0);
+  background-color: oscurecer($azulsuave, 50);
   grid-area: dos;
 }
 
 .footer-widgets-3 {
-  background-color: aclarar($azulsuave, 0);
+  background-color: oscurecer($azulsuave, 40);
   grid-area: tres;
 }
 
 .footer-widgets-4 {
-  background-color: aclarar($azulsuave, 0);
+  background-color: oscurecer($azulsuave, 30);
   grid-area: cuatro;
 }
 
