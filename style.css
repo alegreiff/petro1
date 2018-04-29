@@ -2628,6 +2628,14 @@ main {
 .footer-widgets .search-form {
   width: 100%;
 }*/
+.ps-hero {
+  margin-bottom: 2em;
+}
+
+.ps-imagen-leyenda-mapa {
+  background: #fff;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
