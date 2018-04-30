@@ -154,7 +154,7 @@ var app = new Vue({
           "rollOverColor": "#de4b28", //OK
           "rollOverOutlineColor": "#FFFFFF",
           "selectable": true,
-          "unlistedAreasColor": "#dbb584",
+          "unlistedAreasColor": "#255d8b",
           "balloonText": "[[title]] - [[value]]"
         },
         "export": {
