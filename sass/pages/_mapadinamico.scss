@@ -1,0 +1,69 @@
+/*MAPA DINÁMICO*/
+.elmapaps{
+  background-color: #fff;
+  padding: 1em;
+}
+#paises_mapa {
+  min-width: 340px;
+  height: 530px;
+
+}
+.amcharts-chart-div a {
+  display: none !important;
+}
+img.logomini{
+  max-width: 100px;
+}
+span.spanimage{
+  /*border: 3px lime solid;*/
+  margin: 10px;
+}
+/* Layout: */
+.col-mapa {
+  flex: 2;
+  margin-top: 0px !important;
+  margin-left:0px !important;
+}
+.col-datosmapa {
+  flex: 3;
+  margin-left: 0px !important;
+  margin-top: 0px !important;
+
+}
+/* Responsive: */
+@media only screen and (min-width: 640px) {
+  .layout {
+    display: flex;
+  }
+}
+/* etc */
+.contenedor_mapa {
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  min-height: 600px;
+}
+.col {
+  //padding: 1em;
+  margin: 0 2px 2px 0;
+
+}
+
+.psleyendanombre p{
+  color: #21437a;
+  opacity: 0.7;
+  font-weight: bolder;
+  font-size: 1.3em;
+  margin-top: 0px;
+}
+
+
+
+
+
+
+
+[v-cloak] {
+  display: none;
+}
+

@@ -41,7 +41,7 @@
 
 var y = "<?php echo get_stylesheet_directory_uri(); ?>/petroseismic_custom/datosmapa.json";
 
-    $.getJSON( y, function( data ) {
+    jQuery.getJSON( y, function( data ) {
       console.log(data);
       this.j = data;
     });
@@ -154,7 +154,7 @@ var app = new Vue({
           "rollOverColor": "#de4b28", //OK
           "rollOverOutlineColor": "#FFFFFF",
           "selectable": true,
-          "unlistedAreasColor": "#C1DBD7",
+          "unlistedAreasColor": "#dbb584",
           "balloonText": "[[title]] - [[value]]"
         },
         "export": {
@@ -240,7 +240,7 @@ var chart = AmCharts.makeChart("years", {
     },
     informapa: function(val, dep){
       val = val.substring(3, 6);
-      $("#informapa").html(dep);
+      jQuery("#informapa").html(dep);
       if (val !==''){
       this.empresas = alasql('SELECT anio, cliente, objeto FROM ? WHERE departamento LIKE "%'+val+'%" ORDER BY anio desc', [this.mapacontratos]);
       var logos = alasql('SELECT logo FROM ? WHERE departamento LIKE "%'+val+'%" GROUP BY logo', [this.mapacontratos]);

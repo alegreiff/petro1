@@ -6,7 +6,7 @@ var gulp = require('gulp'),
 gulp.task('browser-sync', function(){
     var files = [
         './style.css',
-        './*.php'
+        './**/*.php'
     ];
     //INICIALIZAR Browser SYNC en un servidor PHP
     browserSync.init(files, {
